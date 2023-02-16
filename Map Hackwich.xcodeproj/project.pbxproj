@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		901B0CC02993FD8F00E083CE /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901B0CBF2993FD8F00E083CE /* LocationManager.swift */; };
 		905F941B2993FA46004761B9 /* Map_HackwichApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905F941A2993FA46004761B9 /* Map_HackwichApp.swift */; };
 		905F941D2993FA46004761B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905F941C2993FA46004761B9 /* ContentView.swift */; };
 		905F941F2993FA49004761B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 905F941E2993FA49004761B9 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		901B0CBF2993FD8F00E083CE /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		905F94172993FA46004761B9 /* Map Hackwich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Map Hackwich.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		905F941A2993FA46004761B9 /* Map_HackwichApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map_HackwichApp.swift; sourceTree = "<group>"; };
 		905F941C2993FA46004761B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				905F941A2993FA46004761B9 /* Map_HackwichApp.swift */,
 				905F941C2993FA46004761B9 /* ContentView.swift */,
+				901B0CBF2993FD8F00E083CE /* LocationManager.swift */,
 				905F941E2993FA49004761B9 /* Assets.xcassets */,
 				905F94202993FA49004761B9 /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				905F941D2993FA46004761B9 /* ContentView.swift in Sources */,
 				905F941B2993FA46004761B9 /* Map_HackwichApp.swift in Sources */,
+				901B0CC02993FD8F00E083CE /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +274,7 @@
 				DEVELOPMENT_TEAM = ZG8S4HH6JX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Ok to use Location Services?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +304,7 @@
 				DEVELOPMENT_TEAM = ZG8S4HH6JX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Ok to use Location Services?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
