@@ -37,6 +37,23 @@ struct ContentView: View {
                 Marker(name: place.name)
             }
         }
+            .onAppear {
+                     findLocation(name: "Springfield")
+                 }
+    }
+    func findLocation(name: String) {
+
+        locationManager.geocoder.geocodeAddressString(name) { (placemarks, error) in
+            guard placemarks != nil else {
+                print("Could not locate \(name)")
+                return
+            }
+            for placemark in placemarks! {
+                let place = Place(name: "\(placemark.name!), \(placemark.administrativeArea!)",
+                                  coordinate: placemark.location!.coordinate)
+                places.append(place)
+            }
+        }
     }
 }
 struct Place: Identifiable {
@@ -60,11 +77,16 @@ struct Marker: View {
                 .frame(width: 200, height: 30, alignment: .center)
             Text(name)
         }
+        
     }
+    
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        
     }
+    
 }
